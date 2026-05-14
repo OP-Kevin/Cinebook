@@ -1,0 +1,2321 @@
+    {
+        "movies": [
+            {
+                "id": 1,
+                "title": "The Lion King",
+                "year": 2019,
+                "runtime": "118 min",
+                "genre": [
+                    "Animation",
+                    "Adventure"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 8.5,
+                "director": "Jon Favreau",
+                "price": 250,
+                "availableSeats": 120,
+                "showTimes": [
+                    "10:00 AM",
+                    "1:30 PM",
+                    "4:00 PM",
+                    "7:00 PM",
+                    "10:15 PM"
+                ],
+                "poster": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_SX300.jpg",
+                "releaseDate": "2019-07-19",
+                "comingSoon": false,
+                "about": "After the murder of his father, lion prince Simba flees his kingdom only to learn the true meaning of responsibility and bravery.",
+                "cast": [
+                    {
+                        "name": "Donald Glover",
+                        "role": "Simba",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Beyonce",
+                        "role": "Nala",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Seth Rogen",
+                        "role": "Pumbaa",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Doctor Strange",
+                "year": 2016,
+                "runtime": "115 min",
+                "genre": [
+                    "Action",
+                    "Fantasy"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 8.1,
+                "director": "Scott Derrickson",
+                "price": 300,
+                "availableSeats": 150,
+                "showTimes": [
+                    "11:00 AM",
+                    "2:00 PM",
+                    "5:00 PM",
+                    "9:00 PM"
+                ],
+                "poster": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg",
+                "releaseDate": "2016-11-04",
+                "comingSoon": false,
+                "about": "A brilliant neurosurgeon discovers the mystic arts after a tragic accident changes his life.",
+                "cast": [
+                    {
+                        "name": "Benedict Cumberbatch",
+                        "role": "Doctor Strange",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Rachel McAdams",
+                        "role": "Christine",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Tilda Swinton",
+                        "role": "Ancient One",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Benedict Wong",
+                        "role": "Wong",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Rachel McAdams",
+                        "role": "Christine",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "title": "John Wick",
+                "year": 2014,
+                "runtime": "101 min",
+                "genre": [
+                    "Action",
+                    "Thriller"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 8.0,
+                "director": "Chad Stahelski",
+                "price": 350,
+                "availableSeats": 90,
+                "showTimes": [
+                    "10:30 AM",
+                    "1:00 PM",
+                    "4:30 PM",
+                    "6:00 PM",
+                    "10:00 PM"
+                ],
+                "poster": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg",
+                "releaseDate": "2014-10-24",
+                "comingSoon": false,
+                "about": "An ex-hitman comes out of retirement to track down gangsters that took everything from him.",
+                "cast": [
+                    {
+                        "name": "Keanu Reeves",
+                        "role": "John Wick",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Willem Dafoe",
+                        "role": "Marcus",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Hellaro",
+                "year": 2019,
+                "runtime": "122 min",
+                "genre": [
+                    "Drama"
+                ],
+                "language": [
+                    "Gujarati"
+                ],
+                "rating": 8.9,
+                "director": "Abhishek Shah",
+                "price": 220,
+                "availableSeats": 100,
+                "showTimes": [
+                    "10:30 AM",
+                    "12:30 PM",
+                    "4:30 PM",
+                    "8:00 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2019-11-08",
+                "comingSoon": false,
+                "about": "A group of women in rural Gujarat find freedom through dance and unity.",
+                "cast": [
+                    {
+                        "name": "Shraddha Dangar",
+                        "role": "Manjari",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Avengers Endgame",
+                "year": 2026,
+                "runtime": "181 min",
+                "genre": [
+                    "Action",
+                    "Sci-Fi"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 0,
+                "director": "Russo Brothers",
+                "price": 450,
+                "availableSeats": 200,
+                "showTimes": [
+                    "9:30 AM",
+                    "9:45 AM",
+                    "2:00 PM",
+                    "3:00 PM",
+                    "9:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2026-04-10",
+                "comingSoon": true,
+                "about": "Superheroes assemble for the ultimate battle to restore the universe.",
+                "cast": [
+                    {
+                        "name": "Robert Downey Jr",
+                        "role": "Iron Man",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Chris Evans",
+                        "role": "Captain America",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "title": "Avatar",
+                "year": 2026,
+                "runtime": "162 min",
+                "genre": [
+                    "Adventure",
+                    "Sci-Fi"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 0,
+                "director": "James Cameron",
+                "price": 350,
+                "availableSeats": 140,
+                "showTimes": [
+                    "10:00 AM",
+                    "10:15 AM",
+                    "12:15 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2026-04-18",
+                "comingSoon": true,
+                "about": "Humans explore Pandora and face conflict with its native Na'vi tribe.",
+                "cast": [
+                    {
+                        "name": "Sam Worthington",
+                        "role": "Jake",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Zoe Saldana",
+                        "role": "Neytiri",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "title": "Titanic",
+                "year": 2026,
+                "runtime": "195 min",
+                "genre": [
+                    "Romance",
+                    "Drama"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 0,
+                "director": "James Cameron",
+                "price": 220,
+                "availableSeats": 60,
+                "showTimes": [
+                    "11:00 AM",
+                    "12:00 PM",
+                    "6:00 PM",
+                    "6:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2026-05-01",
+                "comingSoon": true,
+                "about": "A romantic tragedy unfolds aboard the ill-fated RMS Titanic.",
+                "cast": [
+                    {
+                        "name": "Leonardo DiCaprio",
+                        "role": "Jack",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Kate Winslet",
+                        "role": "Rose",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "title": "Inception",
+                "year": 2026,
+                "runtime": "148 min",
+                "genre": [
+                    "Sci-Fi",
+                    "Thriller"
+                ],
+                "language": [
+                    "English"
+                ],
+                "rating": 0,
+                "director": "Christopher Nolan",
+                "price": 300,
+                "availableSeats": 100,
+                "showTimes": [
+                    "12:00 PM",
+                    "12:45 PM",
+                    "1:00 PM",
+                    "1:30 PM",
+                    "1:45 PM",
+                    "9:00 PM"
+                ],
+                "poster": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+                "releaseDate": "2026-05-08",
+                "comingSoon": true,
+                "about": "A thief steals secrets from dreams using advanced subconscious technology.",
+                "cast": [
+                    {
+                        "name": "Leonardo DiCaprio",
+                        "role": "Cobb",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "title": "Interstellar",
+                "year": 2014,
+                "runtime": "169 min",
+                "genre": [
+                    "Sci-Fi",
+                    "Drama"
+                ],
+                "language": [
+                    "English"
+                ],
+                "rating": 8.9,
+                "director": "Christopher Nolan",
+                "price": 350,
+                "availableSeats": 120,
+                "showTimes": [
+                    "10:30 AM",
+                    "2:00 PM",
+                    "4:00 PM",
+                    "8:30 PM"
+                ],
+                "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+                "releaseDate": "2014-11-07",
+                "comingSoon": false,
+                "about": "Astronauts travel through a wormhole to save humanity from extinction.",
+                "cast": [
+                    {
+                        "name": "Matthew McConaughey",
+                        "role": "Cooper",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "title": "The Dark Knight",
+                "year": 2008,
+                "runtime": "152 min",
+                "genre": [
+                    "Action",
+                    "Crime"
+                ],
+                "language": [
+                    "English"
+                ],
+                "rating": 9.0,
+                "director": "Christopher Nolan",
+                "price": 400,
+                "availableSeats": 150,
+                "showTimes": [
+                    "11:30 AM",
+                    "1:00 PM",
+                    "4:15 PM",
+                    "8:00 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2008-07-18",
+                "comingSoon": false,
+                "about": "Batman faces his greatest enemy Joker who spreads chaos in Gotham.",
+                "cast": [
+                    {
+                        "name": "Christian Bale",
+                        "role": "Batman",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Heath Ledger",
+                        "role": "Joker",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "title": "Shershaah",
+                "year": 2021,
+                "runtime": "135 min",
+                "genre": [
+                    "War",
+                    "Drama"
+                ],
+                "language": [
+                    "Hindi"
+                ],
+                "rating": 8.4,
+                "director": "Vishnuvardhan",
+                "price": 180,
+                "availableSeats": 90,
+                "showTimes": [
+                    "11:00 AM",
+                    "3:15 PM",
+                    "7:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2021-08-12",
+                "comingSoon": false,
+                "about": "Based on the life of Captain Vikram Batra, this film showcases bravery and sacrifice during the Kargil war.",
+                "cast": [
+                    {
+                        "name": "Sidharth Malhotra",
+                        "role": "Vikram Batra",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Kiara Advani",
+                        "role": "Dimple",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "title": "KGF Chapter 1",
+                "year": 2026,
+                "runtime": "155 min",
+                "genre": [
+                    "Action"
+                ],
+                "language": [
+                    "Kannada",
+                    "Telugu",
+                    "Hindi"
+                ],
+                "rating": 0,
+                "director": "Prashanth Neel",
+                "price": 220,
+                "availableSeats": 130,
+                "showTimes": [
+                    "12:00 PM",
+                    "4:30 PM",
+                    "6:00 PM",
+                    "10:00 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2026-05-15",
+                "comingSoon": true,
+                "about": "Rocky rises from poverty to become the most powerful man in the Kolar Gold Fields.",
+                "cast": [
+                    {
+                        "name": "Yash",
+                        "role": "Rocky",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 13,
+                "title": "KGF Chapter 2",
+                "year": 2026,
+                "runtime": "168 min",
+                "genre": [
+                    "Action"
+                ],
+                "language": [
+                    "Kannada",
+                    "Telugu",
+                    "Hindi"
+                ],
+                "rating": 0,
+                "director": "Prashanth Neel",
+                "price": 250,
+                "availableSeats": 150,
+                "showTimes": [
+                    "11:30 AM",
+                    "3:15 PM",
+                    "5:30 PM",
+                    "9:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2026-05-22",
+                "comingSoon": true,
+                "about": "Rocky faces new enemies and challenges while ruling the gold empire.",
+                "cast": [
+                    {
+                        "name": "Yash",
+                        "role": "Rocky",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Sanjay Dutt",
+                        "role": "Adheera",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 14,
+                "title": "RRR",
+                "year": 2022,
+                "runtime": "187 min",
+                "genre": [
+                    "Action",
+                    "Drama"
+                ],
+                "language": [
+                    "Telugu",
+                    "Hindi"
+                ],
+                "rating": 8.7,
+                "director": "S. S. Rajamouli",
+                "price": 300,
+                "availableSeats": 160,
+                "showTimes": [
+                    "10:30 AM",
+                    "2:30 PM",
+                    "6:00 PM",
+                    "9:00 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2022-03-25",
+                "comingSoon": false,
+                "about": "Two revolutionaries fight against British rule and become legends.",
+                "cast": [
+                    {
+                        "name": "Ram Charan",
+                        "role": "Alluri",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Jr NTR",
+                        "role": "Bheem",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "title": "Bahubali The Beginning",
+                "year": 2015,
+                "runtime": "159 min",
+                "genre": [
+                    "Action",
+                    "Fantasy"
+                ],
+                "language": [
+                    "Telugu",
+                    "Hindi"
+                ],
+                "rating": 8.1,
+                "director": "S. S. Rajamouli",
+                "price": 280,
+                "availableSeats": 140,
+                "showTimes": [
+                    "12:00 PM",
+                    "3:00 PM",
+                    "6:45 PM",
+                    "10:15 PM"
+                ],
+                "poster": "https://image.tmdb.org/t/p/w500/9BAjt8nSSms62uOVYn1t3C3dVto.jpg",
+                "releaseDate": "2015-07-10",
+                "comingSoon": false,
+                "about": "A young man learns about his royal heritage and destiny.",
+                "cast": [
+                    {
+                        "name": "Prabhas",
+                        "role": "Baahubali",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Rana Daggubati",
+                        "role": "Bhallaladeva",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 16,
+                "title": "Bahubali The Conclusion",
+                "year": 2017,
+                "runtime": "171 min",
+                "genre": [
+                    "Action",
+                    "Fantasy"
+                ],
+                "language": [
+                    "Telugu",
+                    "Hindi"
+                ],
+                "rating": 8.3,
+                "director": "S. S. Rajamouli",
+                "price": 320,
+                "availableSeats": 150,
+                "showTimes": [
+                    "1:00 PM",
+                    "4:00 PM",
+                    "8:00 PM",
+                    "10:30 PM"
+                ],
+                "poster": "https://image.tmdb.org/t/p/w500/21sC2assImQIYCEDA84Qh9d1RsK.jpg",
+                "releaseDate": "2017-04-28",
+                "comingSoon": false,
+                "about": "The epic battle for Mahishmati kingdom reaches its climax.",
+                "cast": [
+                    {
+                        "name": "Prabhas",
+                        "role": "Baahubali",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Anushka Shetty",
+                        "role": "Devasena",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 17,
+                "title": "Jawan",
+                "year": 2023,
+                "runtime": "169 min",
+                "genre": [
+                    "Action",
+                    "Thriller"
+                ],
+                "language": [
+                    "Hindi"
+                ],
+                "rating": 7.8,
+                "director": "Atlee",
+                "price": 300,
+                "availableSeats": 200,
+                "showTimes": [
+                    "12:30 PM",
+                    "4:00 PM",
+                    "7:00 PM",
+                    "10:00 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2023-09-07",
+                "comingSoon": false,
+                "about": "A vigilante seeks justice and exposes corruption in society.",
+                "cast": [
+                    {
+                        "name": "Shah Rukh Khan",
+                        "role": "Vikram",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Nayanthara",
+                        "role": "Narmada",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 26,
+                "title": "Chhello Divas",
+                "year": 2015,
+                "runtime": "155 min",
+                "genre": [
+                    "Comedy",
+                    "Drama"
+                ],
+                "language": [
+                    "Gujarati"
+                ],
+                "rating": 8.3,
+                "director": "Krishnadev Yagnik",
+                "price": 200,
+                "availableSeats": 120,
+                "showTimes": [
+                    "11:00 AM",
+                    "3:00 PM",
+                    "4:00 PM",
+                    "8:00 PM",
+                    "8:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2015-11-20",
+                "comingSoon": false,
+                "about": "A group of college friends experience love, fun and emotional moments.",
+                "cast": [
+                    {
+                        "name": "Malhar Thakar",
+                        "role": "Vicky",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "title": "3 Idiots",
+                "year": 2009,
+                "runtime": "170 min",
+                "genre": [
+                    "Comedy",
+                    "Drama"
+                ],
+                "language": [
+                    "Hindi"
+                ],
+                "rating": 8.4,
+                "director": "Rajkumar Hirani",
+                "price": 150,
+                "availableSeats": 80,
+                "showTimes": [
+                    "10:00 AM",
+                    "2:30 PM",
+                    "7:00 PM",
+                    "10:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2009-12-25",
+                "comingSoon": false,
+                "about": "Three engineering students learn life lessons beyond academics.",
+                "cast": [
+                    {
+                        "name": "Aamir Khan",
+                        "role": "Rancho",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "R Madhavan",
+                        "role": "Farhan",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 20,
+                "title": "Dangal",
+                "year": 2016,
+                "runtime": "161 min",
+                "genre": [
+                    "Sports",
+                    "Drama"
+                ],
+                "language": [
+                    "Hindi"
+                ],
+                "rating": 8.5,
+                "director": "Nitesh Tiwari",
+                "price": 180,
+                "availableSeats": 100,
+                "showTimes": [
+                    "11:30 AM",
+                    "5:00 PM",
+                    "8:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2016-12-23",
+                "comingSoon": false,
+                "about": "A father trains his daughters to become world-class wrestlers.",
+                "cast": [
+                    {
+                        "name": "Aamir Khan",
+                        "role": "Mahavir",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 21,
+                "title": "Avengers: Infinity War",
+                "year": 2018,
+                "runtime": "149 min",
+                "genre": [
+                    "Action",
+                    "Sci-Fi"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 8.4,
+                "director": "Russo Brothers",
+                "price": 400,
+                "availableSeats": 180,
+                "showTimes": [
+                    "11:00 AM",
+                    "2:45 PM",
+                    "5:30 PM",
+                    "7:15 PM",
+                    "9:30 PM"
+                ],
+                "poster": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+                "releaseDate": "2018-04-27",
+                "comingSoon": false,
+                "about": "The Avengers unite to stop Thanos from collecting all infinity stones.",
+                "cast": [
+                    {
+                        "name": "Robert Downey Jr",
+                        "role": "Iron Man",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Chris Hemsworth",
+                        "role": "Thor",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 30,
+                "title": "Pushpa The Rise",
+                "year": 2026,
+                "runtime": "179 min",
+                "genre": [
+                    "Action",
+                    "Drama"
+                ],
+                "language": [
+                    "Telugu",
+                    "Hindi"
+                ],
+                "rating": 0,
+                "director": "Sukumar",
+                "price": 280,
+                "availableSeats": 180,
+                "showTimes": [
+                    "9:45 AM",
+                    "10:00 AM",
+                    "6:30 PM",
+                    "7:45 PM",
+                    "9:00 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2026-06-05",
+                "comingSoon": true,
+                "about": "A fearless man rises in the red sandalwood smuggling world and becomes a powerful figure.",
+                "cast": [
+                    {
+                        "name": "Allu Arjun",
+                        "role": "Pushpa",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Rashmika Mandanna",
+                        "role": "Srivalli",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 31,
+                "title": "Salaar",
+                "year": 2026,
+                "runtime": "175 min",
+                "genre": [
+                    "Action",
+                    "Thriller"
+                ],
+                "language": [
+                    "Telugu",
+                    "Hindi"
+                ],
+                "rating": 0,
+                "director": "Prashanth Neel",
+                "price": 320,
+                "availableSeats": 200,
+                "showTimes": [
+                    "5:00 PM",
+                    "7:30 PM",
+                    "7:45 PM",
+                    "9:15 PM",
+                    "9:45 PM",
+                    "10:00 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2026-06-12",
+                "comingSoon": true,
+                "about": "A violent man becomes the most feared leader in a brutal underworld.",
+                "cast": [
+                    {
+                        "name": "Prabhas",
+                        "role": "Salaar",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Shruti Haasan",
+                        "role": "Lead",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 32,
+                "title": "Pathaan",
+                "year": 2023,
+                "runtime": "146 min",
+                "genre": [
+                    "Action",
+                    "Thriller"
+                ],
+                "language": [
+                    "Hindi"
+                ],
+                "rating": 7.9,
+                "director": "Siddharth Anand",
+                "price": 300,
+                "availableSeats": 160,
+                "showTimes": [
+                    "9:30 AM",
+                    "12:30 PM",
+                    "3:30 PM",
+                    "6:00 PM",
+                    "9:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2023-01-25",
+                "comingSoon": false,
+                "about": "An Indian spy takes on a dangerous mission to protect his country.",
+                "cast": [
+                    {
+                        "name": "Shah Rukh Khan",
+                        "role": "Pathaan",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Deepika Padukone",
+                        "role": "Rubina",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 33,
+                "title": "Jailer",
+                "year": 2023,
+                "runtime": "168 min",
+                "genre": [
+                    "Action",
+                    "Drama"
+                ],
+                "language": [
+                    "Tamil",
+                    "Hindi"
+                ],
+                "rating": 8.1,
+                "director": "Nelson Dilipkumar",
+                "price": 270,
+                "availableSeats": 140,
+                "showTimes": [
+                    "12:00 PM",
+                    "4:30 PM",
+                    "9:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2023-08-10",
+                "comingSoon": false,
+                "about": "A retired jailer fights criminals to save his kidnapped son.",
+                "cast": [
+                    {
+                        "name": "Rajinikanth",
+                        "role": "Tiger",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 34,
+                "title": "Deadpool & Wolverine",
+                "year": 2024,
+                "runtime": "128 min",
+                "genre": [
+                    "Action",
+                    "Comedy"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 8.6,
+                "director": "Shawn Levy",
+                "price": 350,
+                "availableSeats": 160,
+                "showTimes": [
+                    "12:30 PM",
+                    "5:00 PM",
+                    "6:15 PM",
+                    "9:15 PM",
+                    "10:30 PM"
+                ],
+                "poster": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+                "releaseDate": "2024-07-26",
+                "comingSoon": false,
+                "about": "Deadpool teams up with Wolverine for a wild and action-packed multiverse adventure.",
+                "cast": [
+                    {
+                        "name": "Ryan Reynolds",
+                        "role": "Deadpool",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Hugh Jackman",
+                        "role": "Wolverine",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 35,
+                "title": "Oppenheimer",
+                "year": 2023,
+                "runtime": "180 min",
+                "genre": [
+                    "Drama",
+                    "History"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 8.9,
+                "director": "Christopher Nolan",
+                "price": 380,
+                "availableSeats": 140,
+                "showTimes": [
+                    "11:00 AM",
+                    "2:00 PM",
+                    "8:00 PM",
+                    "9:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2023-07-21",
+                "comingSoon": false,
+                "about": "The story of J. Robert Oppenheimer and the creation of the atomic bomb.",
+                "cast": [
+                    {
+                        "name": "Cillian Murphy",
+                        "role": "Oppenheimer",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 36,
+                "title": "Dune Part Two",
+                "year": 2024,
+                "runtime": "166 min",
+                "genre": [
+                    "Sci-Fi",
+                    "Adventure"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 8.7,
+                "director": "Denis Villeneuve",
+                "price": 360,
+                "availableSeats": 150,
+                "showTimes": [
+                    "3:30 PM",
+                    "6:30 PM",
+                    "8:00 PM",
+                    "9:30 PM"
+                ],
+                "poster": "https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
+                "releaseDate": "2024-03-01",
+                "comingSoon": false,
+                "about": "Paul Atreides leads a rebellion to reclaim Arrakis and fulfill his destiny.",
+                "cast": [
+                    {
+                        "name": "Timothee Chalamet",
+                        "role": "Paul",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Zendaya",
+                        "role": "Chani",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 37,
+                "title": "Pushpa 2 The Rule",
+                "year": 2024,
+                "runtime": "170 min",
+                "genre": [
+                    "Action",
+                    "Drama"
+                ],
+                "language": [
+                    "Telugu",
+                    "Hindi"
+                ],
+                "rating": 8.5,
+                "director": "Sukumar",
+                "price": 340,
+                "availableSeats": 180,
+                "showTimes": [
+                    "5:30 PM",
+                    "7:30 PM",
+                    "9:45 PM",
+                    "10:15 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2024-12-06",
+                "comingSoon": false,
+                "about": "Pushpa continues his rise while facing powerful enemies and political challenges.",
+                "cast": [
+                    {
+                        "name": "Allu Arjun",
+                        "role": "Pushpa",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 38,
+                "title": "Avatar 3",
+                "year": 2026,
+                "runtime": "175 min",
+                "genre": [
+                    "Sci-Fi",
+                    "Adventure"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 0,
+                "director": "James Cameron",
+                "price": 400,
+                "availableSeats": 0,
+                "showTimes": [
+                    "11:00 PM",
+                    "2:30 PM",
+                    "10:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2026-12-20",
+                "comingSoon": true,
+                "about": "A new chapter unfolds on Pandora with deeper conflicts and discoveries.",
+                "cast": [
+                    {
+                        "name": "Sam Worthington",
+                        "role": "Jake",
+                        "image": "/cast/default.jpg"
+                    },
+                    {
+                        "name": "Zoe Saldana",
+                        "role": "Neytiri",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            },
+            {
+                "id": 39,
+                "title": "Spider Man Beyond the Spider Verse",
+                "year": 2026,
+                "runtime": "140 min",
+                "genre": [
+                    "Animation",
+                    "Action"
+                ],
+                "language": [
+                    "English",
+                    "Hindi"
+                ],
+                "rating": 0,
+                "director": "Joaquim Dos Santos",
+                "price": 350,
+                "availableSeats": 168,
+                "showTimes": [
+                    "11:00 AM",
+                    "4:30 PM",
+                    "10:30 PM"
+                ],
+                "poster": "/defaultmovie.jpg",
+                "releaseDate": "2026-11-15",
+                "comingSoon": true,
+                "about": "Miles Morales travels across multiple universes to save the Spider-Verse.",
+                "cast": [
+                    {
+                        "name": "Shameik Moore",
+                        "role": "Miles",
+                        "image": "/cast/default.jpg"
+                    }
+                ]
+            }
+        ],
+        "theaters": [
+            {
+                "theaterId": 1,
+                "name": "PVR Cinemas",
+                "city": "Ahmedabad",
+                "location": "Alpha One Mall",
+                "screens": 6,
+                "movieIds": [
+                    1,
+                    5,
+                    8,
+                    21,
+                    30,
+                    34
+                ]
+            },
+            {
+                "theaterId": 2,
+                "name": "INOX Cinemas",
+                "city": "Ahmedabad",
+                "location": "CG Road",
+                "screens": 5,
+                "movieIds": [
+                    2,
+                    6,
+                    9,
+                    12,
+                    20,
+                    31
+                ]
+            },
+            {
+                "theaterId": 3,
+                "name": "Cinepolis",
+                "city": "Surat",
+                "location": "VR Mall",
+                "screens": 7,
+                "movieIds": [
+                    3,
+                    7,
+                    13,
+                    14,
+                    32,
+                    35
+                ]
+            },
+            {
+                "theaterId": 4,
+                "name": "Miraj Cinemas",
+                "city": "Vadodara",
+                "location": "Inorbit Mall",
+                "screens": 4,
+                "movieIds": [
+                    4,
+                    10,
+                    11,
+                    15,
+                    16,
+                    36
+                ]
+            },
+            {
+                "theaterId": 5,
+                "name": "City Gold",
+                "city": "Rajkot",
+                "location": "Crystal Mall",
+                "screens": 5,
+                "movieIds": [
+                    17,
+                    19,
+                    20,
+                    26,
+                    30
+                ]
+            },
+            {
+                "theaterId": 6,
+                "name": "Wave Cinemas",
+                "city": "Delhi",
+                "location": "Noida Sector 18",
+                "screens": 8,
+                "movieIds": [
+                    1,
+                    2,
+                    5,
+                    8,
+                    21,
+                    37
+                ]
+            },
+            {
+                "theaterId": 7,
+                "name": "Carnival Cinemas",
+                "city": "Mumbai",
+                "location": "Phoenix Mall",
+                "screens": 6,
+                "movieIds": [
+                    3,
+                    6,
+                    9,
+                    13,
+                    31,
+                    34
+                ]
+            },
+            {
+                "theaterId": 8,
+                "name": "INOX Insignia",
+                "city": "Bangalore",
+                "location": "UB City Mall",
+                "screens": 3,
+                "movieIds": [
+                    8,
+                    9,
+                    10,
+                    35
+                ]
+            },
+            {
+                "theaterId": 9,
+                "name": "PVR Luxe",
+                "city": "Mumbai",
+                "location": "Jio World Drive",
+                "screens": 4,
+                "movieIds": [
+                    5,
+                    21,
+                    34,
+                    36
+                ]
+            },
+            {
+                "theaterId": 10,
+                "name": "Galaxy Cinemas",
+                "city": "Ahmedabad",
+                "location": "Naroda",
+                "screens": 3,
+                "movieIds": [
+                    1,
+                    4,
+                    19,
+                    26,
+                    32
+                ]
+            },
+            {
+                "theaterId": 11,
+                "name": "INOX Mega Screen",
+                "city": "Pune",
+                "location": "Phoenix Mall",
+                "screens": 7,
+                "movieIds": [
+                    12,
+                    13,
+                    14,
+                    30,
+                    31
+                ]
+            },
+            {
+                "theaterId": 12,
+                "name": "PVR Director's Cut",
+                "city": "Delhi",
+                "location": "Vasant Kunj",
+                "screens": 4,
+                "movieIds": [
+                    8,
+                    9,
+                    21,
+                    35
+                ]
+            },
+            {
+                "theaterId": 13,
+                "name": "Rajhans Cinemas",
+                "city": "Surat",
+                "location": "Adajan",
+                "screens": 6,
+                "movieIds": [
+                    14,
+                    15,
+                    16,
+                    26,
+                    37
+                ]
+            },
+            {
+                "theaterId": 14,
+                "name": "PVR RahulRaj",
+                "city": "Surat",
+                "location": "Dumas Road",
+                "screens": 5,
+                "movieIds": [
+                    1,
+                    5,
+                    14,
+                    21,
+                    34
+                ]
+            },
+            {
+                "theaterId": 15,
+                "name": "INOX Reliance Mall",
+                "city": "Surat",
+                "location": "Udhna Darwaja",
+                "screens": 4,
+                "movieIds": [
+                    2,
+                    6,
+                    9,
+                    12,
+                    31
+                ]
+            },
+            {
+                "theaterId": 16,
+                "name": "Time Cinema",
+                "city": "Surat",
+                "location": "Kamrej",
+                "screens": 3,
+                "movieIds": [
+                    3,
+                    7,
+                    13,
+                    30
+                ]
+            },
+            {
+                "theaterId": 17,
+                "name": "Valentine Cinema",
+                "city": "Surat",
+                "location": "Piplod",
+                "screens": 4,
+                "movieIds": [
+                    8,
+                    10,
+                    19,
+                    26,
+                    35
+                ]
+            },
+            {
+                "theaterId": 18,
+                "name": "Rajhans Prime",
+                "city": "Surat",
+                "location": "Vesu",
+                "screens": 6,
+                "movieIds": [
+                    14,
+                    15,
+                    16,
+                    32,
+                    37
+                ]
+            },
+            {
+                "theaterId": 19,
+                "name": "PVR Orion",
+                "city": "Bangalore",
+                "location": "Orion Mall",
+                "screens": 7,
+                "movieIds": [
+                    1,
+                    8,
+                    21,
+                    34,
+                    35
+                ]
+            },
+            {
+                "theaterId": 20,
+                "name": "INOX Forum",
+                "city": "Bangalore",
+                "location": "Forum Mall",
+                "screens": 5,
+                "movieIds": [
+                    2,
+                    6,
+                    9,
+                    12,
+                    31
+                ]
+            },
+            {
+                "theaterId": 21,
+                "name": "Cinepolis Seawoods",
+                "city": "Mumbai",
+                "location": "Seawoods Grand Central",
+                "screens": 6,
+                "movieIds": [
+                    3,
+                    5,
+                    14,
+                    21,
+                    36
+                ]
+            },
+            {
+                "theaterId": 22,
+                "name": "Miraj Funplex",
+                "city": "Nagpur",
+                "location": "Manish Nagar",
+                "screens": 4,
+                "movieIds": [
+                    4,
+                    10,
+                    19,
+                    26
+                ]
+            },
+            {
+                "theaterId": 23,
+                "name": "Wave Cinemas",
+                "city": "Lucknow",
+                "location": "Gomti Nagar",
+                "screens": 6,
+                "movieIds": [
+                    7,
+                    20,
+                    30,
+                    32
+                ]
+            },
+            {
+                "theaterId": 24,
+                "name": "Carnival Cinemas",
+                "city": "Kolkata",
+                "location": "Salt Lake",
+                "screens": 5,
+                "movieIds": [
+                    8,
+                    13,
+                    21,
+                    37
+                ]
+            },
+            {
+                "theaterId": 25,
+                "name": "PVR Elante",
+                "city": "Chandigarh",
+                "location": "Elante Mall",
+                "screens": 8,
+                "movieIds": [
+                    1,
+                    5,
+                    9,
+                    14,
+                    35
+                ]
+            },
+            {
+                "theaterId": 26,
+                "name": "INOX Prozone",
+                "city": "Coimbatore",
+                "location": "Prozone Mall",
+                "screens": 4,
+                "movieIds": [
+                    2,
+                    6,
+                    12,
+                    31
+                ]
+            },
+            {
+                "theaterId": 27,
+                "name": "City Pride",
+                "city": "Pune",
+                "location": "Kothrud",
+                "screens": 5,
+                "movieIds": [
+                    3,
+                    15,
+                    16,
+                    30
+                ]
+            },
+            {
+                "theaterId": 28,
+                "name": "Asian Cinemas",
+                "city": "Hyderabad",
+                "location": "Gachibowli",
+                "screens": 7,
+                "movieIds": [
+                    14,
+                    17,
+                    21,
+                    34
+                ]
+            }
+        ],
+        "shows": [
+            {
+                "showId": 1,
+                "movieId": 9,
+                "theaterId": 1,
+                "dayOffset": 0,
+                "time": "9:30 AM",
+                "price": 350,
+                "availableSeats": 120
+            },
+            {
+                "showId": 2,
+                "movieId": 21,
+                "theaterId": 2,
+                "dayOffset": 0,
+                "time": "3:00 PM",
+                "price": 400,
+                "availableSeats": 150
+            },
+            {
+                "showId": 3,
+                "movieId": 34,
+                "theaterId": 3,
+                "dayOffset": 0,
+                "time": "9:30 PM",
+                "price": 360,
+                "availableSeats": 140
+            },
+            {
+                "showId": 4,
+                "movieId": 1,
+                "theaterId": 1,
+                "dayOffset": 0,
+                "time": "10:00 AM",
+                "price": 250,
+                "availableSeats": 130
+            },
+            {
+                "showId": 5,
+                "movieId": 1,
+                "theaterId": 10,
+                "dayOffset": 0,
+                "time": "7:00 PM",
+                "price": 260,
+                "availableSeats": 110
+            },
+            {
+                "showId": 6,
+                "movieId": 2,
+                "theaterId": 2,
+                "dayOffset": 0,
+                "time": "11:00 AM",
+                "price": 300,
+                "availableSeats": 140
+            },
+            {
+                "showId": 7,
+                "movieId": 2,
+                "theaterId": 4,
+                "dayOffset": 0,
+                "time": "9:00 PM",
+                "price": 320,
+                "availableSeats": 120
+            },
+            {
+                "showId": 8,
+                "movieId": 3,
+                "theaterId": 3,
+                "dayOffset": 0,
+                "time": "6:00 PM",
+                "price": 350,
+                "availableSeats": 90
+            },
+            {
+                "showId": 9,
+                "movieId": 3,
+                "theaterId": 6,
+                "dayOffset": 0,
+                "time": "10:00 PM",
+                "price": 380,
+                "availableSeats": 100
+            },
+            {
+                "showId": 10,
+                "movieId": 14,
+                "theaterId": 5,
+                "dayOffset": 0,
+                "time": "3:00 PM",
+                "price": 300,
+                "availableSeats": 160
+            },
+            {
+                "showId": 11,
+                "movieId": 14,
+                "theaterId": 7,
+                "dayOffset": 0,
+                "time": "9:00 PM",
+                "price": 350,
+                "availableSeats": 140
+            },
+            {
+                "showId": 12,
+                "movieId": 26,
+                "theaterId": 5,
+                "dayOffset": 0,
+                "time": "8:00 PM",
+                "price": 200,
+                "availableSeats": 120
+            },
+            {
+                "showId": 13,
+                "movieId": 26,
+                "theaterId": 10,
+                "dayOffset": 0,
+                "time": "4:00 PM",
+                "price": 180,
+                "availableSeats": 100
+            },
+            {
+                "showId": 14,
+                "movieId": 9,
+                "theaterId": 6,
+                "dayOffset": 1,
+                "time": "12:00 PM",
+                "price": 350,
+                "availableSeats": 120
+            },
+            {
+                "showId": 15,
+                "movieId": 32,
+                "theaterId": 7,
+                "dayOffset": 1,
+                "time": "9:00 PM",
+                "price": 300,
+                "availableSeats": 160
+            },
+            {
+                "showId": 16,
+                "movieId": 9,
+                "theaterId": 8,
+                "dayOffset": 1,
+                "time": "10:30 AM",
+                "price": 350,
+                "availableSeats": 120
+            },
+            {
+                "showId": 17,
+                "movieId": 9,
+                "theaterId": 9,
+                "dayOffset": 1,
+                "time": "8:30 PM",
+                "price": 400,
+                "availableSeats": 100
+            },
+            {
+                "showId": 18,
+                "movieId": 10,
+                "theaterId": 1,
+                "dayOffset": 1,
+                "time": "12:00 PM",
+                "price": 400,
+                "availableSeats": 150
+            },
+            {
+                "showId": 19,
+                "movieId": 35,
+                "theaterId": 2,
+                "dayOffset": 1,
+                "time": "10:00 PM",
+                "price": 380,
+                "availableSeats": 140
+            },
+            {
+                "showId": 20,
+                "movieId": 17,
+                "theaterId": 3,
+                "dayOffset": 1,
+                "time": "5:30 PM",
+                "price": 300,
+                "availableSeats": 200
+            },
+            {
+                "showId": 21,
+                "movieId": 19,
+                "theaterId": 4,
+                "dayOffset": 1,
+                "time": "9:30 PM",
+                "price": 150,
+                "availableSeats": 80
+            },
+            {
+                "showId": 22,
+                "movieId": 20,
+                "theaterId": 6,
+                "dayOffset": 1,
+                "time": "6:00 PM",
+                "price": 180,
+                "availableSeats": 100
+            },
+            {
+                "showId": 23,
+                "movieId": 26,
+                "theaterId": 7,
+                "dayOffset": 1,
+                "time": "11:00 AM",
+                "price": 200,
+                "availableSeats": 120
+            },
+            {
+                "showId": 24,
+                "movieId": 19,
+                "theaterId": 10,
+                "dayOffset": 1,
+                "time": "10:00 AM",
+                "price": 150,
+                "availableSeats": 90
+            },
+            {
+                "showId": 25,
+                "movieId": 20,
+                "theaterId": 2,
+                "dayOffset": 1,
+                "time": "5:00 PM",
+                "price": 180,
+                "availableSeats": 100
+            },
+            {
+                "showId": 26,
+                "movieId": 21,
+                "theaterId": 1,
+                "dayOffset": 1,
+                "time": "11:00 AM",
+                "price": 400,
+                "availableSeats": 180
+            },
+            {
+                "showId": 27,
+                "movieId": 21,
+                "theaterId": 9,
+                "dayOffset": 1,
+                "time": "9:00 PM",
+                "price": 450,
+                "availableSeats": 150
+            },
+            {
+                "showId": 40,
+                "movieId": 34,
+                "theaterId": 1,
+                "dayOffset": 3,
+                "time": "10:00 AM",
+                "price": 360,
+                "availableSeats": 150
+            },
+            {
+                "showId": 41,
+                "movieId": 32,
+                "theaterId": 2,
+                "dayOffset": 3,
+                "time": "9:00 PM",
+                "price": 300,
+                "availableSeats": 160
+            },
+            {
+                "showId": 42,
+                "movieId": 35,
+                "theaterId": 3,
+                "dayOffset": 3,
+                "time": "5:00 PM",
+                "price": 380,
+                "availableSeats": 140
+            },
+            {
+                "showId": 43,
+                "movieId": 32,
+                "theaterId": 10,
+                "dayOffset": 3,
+                "time": "6:00 PM",
+                "price": 300,
+                "availableSeats": 170
+            },
+            {
+                "showId": 44,
+                "movieId": 33,
+                "theaterId": 11,
+                "dayOffset": 3,
+                "time": "9:30 PM",
+                "price": 270,
+                "availableSeats": 140
+            },
+            {
+                "showId": 45,
+                "movieId": 34,
+                "theaterId": 1,
+                "dayOffset": 3,
+                "time": "12:30 PM",
+                "price": 360,
+                "availableSeats": 150
+            },
+            {
+                "showId": 80,
+                "movieId": 32,
+                "theaterId": 10,
+                "dayOffset": 3,
+                "time": "9:30 AM",
+                "price": 280,
+                "availableSeats": 160
+            },
+            {
+                "showId": 81,
+                "movieId": 26,
+                "theaterId": 10,
+                "dayOffset": 3,
+                "time": "8:30 PM",
+                "price": 210,
+                "availableSeats": 100
+            },
+            {
+                "showId": 82,
+                "movieId": 1,
+                "theaterId": 14,
+                "dayOffset": 3,
+                "time": "10:15 AM",
+                "price": 260,
+                "availableSeats": 120
+            },
+            {
+                "showId": 83,
+                "movieId": 21,
+                "theaterId": 14,
+                "dayOffset": 3,
+                "time": "2:45 PM",
+                "price": 420,
+                "availableSeats": 150
+            },
+            {
+                "showId": 84,
+                "movieId": 34,
+                "theaterId": 14,
+                "dayOffset": 2,
+                "time": "9:15 PM",
+                "price": 380,
+                "availableSeats": 110
+            },
+            {
+                "showId": 85,
+                "movieId": 17,
+                "theaterId": 26,
+                "dayOffset": 2,
+                "time": "9:15 PM",
+                "price": 300,
+                "availableSeats": 160
+            },
+            {
+                "showId": 86,
+                "movieId": 15,
+                "theaterId": 27,
+                "dayOffset": 2,
+                "time": "1:30 PM",
+                "price": 280,
+                "availableSeats": 120
+            },
+            {
+                "showId": 87,
+                "movieId": 19,
+                "theaterId": 27,
+                "dayOffset": 2,
+                "time": "7:45 PM",
+                "price": 150,
+                "availableSeats": 90
+            },
+            {
+                "showId": 88,
+                "movieId": 17,
+                "theaterId": 28,
+                "dayOffset": 2,
+                "time": "4:00 PM",
+                "price": 320,
+                "availableSeats": 160
+            },
+            {
+                "showId": 89,
+                "movieId": 34,
+                "theaterId": 28,
+                "dayOffset": 2,
+                "time": "10:30 PM",
+                "price": 380,
+                "availableSeats": 140
+            },
+            {
+                "showId": 90,
+                "movieId": 21,
+                "theaterId": 19,
+                "dayOffset": 2,
+                "time": "4:30 PM",
+                "price": 420,
+                "availableSeats": 140
+            },
+            {
+                "showId": 1,
+                "movieId": 1,
+                "theaterId": 1,
+                "dayOffset": 0,
+                "time": "10:00 AM",
+                "price": 250,
+                "availableSeats": 120
+            },
+            {
+                "showId": 2,
+                "movieId": 1,
+                "theaterId": 1,
+                "dayOffset": 0,
+                "time": "4:00 PM",
+                "price": 250,
+                "availableSeats": 110
+            },
+            {
+                "showId": 3,
+                "movieId": 1,
+                "theaterId": 10,
+                "dayOffset": 0,
+                "time": "7:00 PM",
+                "price": 260,
+                "availableSeats": 100
+            },
+            {
+                "showId": 4,
+                "movieId": 2,
+                "theaterId": 2,
+                "dayOffset": 0,
+                "time": "11:00 AM",
+                "price": 300,
+                "availableSeats": 140
+            },
+            {
+                "showId": 5,
+                "movieId": 2,
+                "theaterId": 2,
+                "dayOffset": 0,
+                "time": "5:00 PM",
+                "price": 300,
+                "availableSeats": 130
+            },
+            {
+                "showId": 6,
+                "movieId": 2,
+                "theaterId": 4,
+                "dayOffset": 0,
+                "time": "9:00 PM",
+                "price": 320,
+                "availableSeats": 120
+            },
+            {
+                "showId": 7,
+                "movieId": 3,
+                "theaterId": 3,
+                "dayOffset": 0,
+                "time": "1:00 PM",
+                "price": 350,
+                "availableSeats": 90
+            },
+            {
+                "showId": 8,
+                "movieId": 3,
+                "theaterId": 6,
+                "dayOffset": 0,
+                "time": "6:00 PM",
+                "price": 350,
+                "availableSeats": 95
+            },
+            {
+                "showId": 9,
+                "movieId": 3,
+                "theaterId": 6,
+                "dayOffset": 0,
+                "time": "10:00 PM",
+                "price": 380,
+                "availableSeats": 85
+            },
+            {
+                "showId": 10,
+                "movieId": 9,
+                "theaterId": 5,
+                "dayOffset": 1,
+                "time": "10:30 AM",
+                "price": 350,
+                "availableSeats": 120
+            },
+            {
+                "showId": 11,
+                "movieId": 9,
+                "theaterId": 5,
+                "dayOffset": 1,
+                "time": "4:00 PM",
+                "price": 350,
+                "availableSeats": 110
+            },
+            {
+                "showId": 12,
+                "movieId": 9,
+                "theaterId": 7,
+                "dayOffset": 1,
+                "time": "8:30 PM",
+                "price": 400,
+                "availableSeats": 100
+            },
+            {
+                "showId": 13,
+                "movieId": 14,
+                "theaterId": 5,
+                "dayOffset": 1,
+                "time": "2:30 PM",
+                "price": 300,
+                "availableSeats": 150
+            },
+            {
+                "showId": 14,
+                "movieId": 14,
+                "theaterId": 7,
+                "dayOffset": 1,
+                "time": "9:00 PM",
+                "price": 350,
+                "availableSeats": 140
+            },
+            {
+                "showId": 15,
+                "movieId": 17,
+                "theaterId": 3,
+                "dayOffset": 1,
+                "time": "4:00 PM",
+                "price": 300,
+                "availableSeats": 200
+            },
+            {
+                "showId": 16,
+                "movieId": 17,
+                "theaterId": 3,
+                "dayOffset": 1,
+                "time": "10:00 PM",
+                "price": 320,
+                "availableSeats": 180
+            },
+            {
+                "showId": 17,
+                "movieId": 19,
+                "theaterId": 4,
+                "dayOffset": 1,
+                "time": "2:30 PM",
+                "price": 150,
+                "availableSeats": 90
+            },
+            {
+                "showId": 18,
+                "movieId": 19,
+                "theaterId": 4,
+                "dayOffset": 1,
+                "time": "7:00 PM",
+                "price": 150,
+                "availableSeats": 80
+            },
+            {
+                "showId": 19,
+                "movieId": 20,
+                "theaterId": 6,
+                "dayOffset": 1,
+                "time": "5:00 PM",
+                "price": 180,
+                "availableSeats": 100
+            },
+            {
+                "showId": 20,
+                "movieId": 20,
+                "theaterId": 6,
+                "dayOffset": 1,
+                "time": "8:30 PM",
+                "price": 180,
+                "availableSeats": 95
+            },
+            {
+                "showId": 21,
+                "movieId": 21,
+                "theaterId": 1,
+                "dayOffset": 2,
+                "time": "11:00 AM",
+                "price": 400,
+                "availableSeats": 180
+            },
+            {
+                "showId": 22,
+                "movieId": 21,
+                "theaterId": 1,
+                "dayOffset": 2,
+                "time": "7:15 PM",
+                "price": 420,
+                "availableSeats": 170
+            },
+            {
+                "showId": 23,
+                "movieId": 21,
+                "theaterId": 9,
+                "dayOffset": 2,
+                "time": "9:30 PM",
+                "price": 450,
+                "availableSeats": 150
+            },
+            {
+                "showId": 24,
+                "movieId": 26,
+                "theaterId": 10,
+                "dayOffset": 2,
+                "time": "3:00 PM",
+                "price": 200,
+                "availableSeats": 120
+            },
+            {
+                "showId": 25,
+                "movieId": 26,
+                "theaterId": 10,
+                "dayOffset": 2,
+                "time": "8:30 PM",
+                "price": 210,
+                "availableSeats": 110
+            },
+            {
+                "showId": 26,
+                "movieId": 32,
+                "theaterId": 2,
+                "dayOffset": 3,
+                "time": "12:30 PM",
+                "price": 300,
+                "availableSeats": 160
+            },
+            {
+                "showId": 27,
+                "movieId": 32,
+                "theaterId": 2,
+                "dayOffset": 3,
+                "time": "6:00 PM",
+                "price": 300,
+                "availableSeats": 150
+            },
+            {
+                "showId": 28,
+                "movieId": 33,
+                "theaterId": 11,
+                "dayOffset": 3,
+                "time": "9:30 PM",
+                "price": 270,
+                "availableSeats": 140
+            },
+            {
+                "showId": 29,
+                "movieId": 34,
+                "theaterId": 14,
+                "dayOffset": 2,
+                "time": "5:00 PM",
+                "price": 350,
+                "availableSeats": 140
+            },
+            {
+                "showId": 30,
+                "movieId": 34,
+                "theaterId": 14,
+                "dayOffset": 2,
+                "time": "10:30 PM",
+                "price": 380,
+                "availableSeats": 130
+            },
+            {
+                "showId": 31,
+                "movieId": 35,
+                "theaterId": 3,
+                "dayOffset": 3,
+                "time": "11:00 AM",
+                "price": 380,
+                "availableSeats": 140
+            },
+            {
+                "showId": 32,
+                "movieId": 35,
+                "theaterId": 3,
+                "dayOffset": 3,
+                "time": "8:45 PM",
+                "price": 380,
+                "availableSeats": 130
+            },
+            {
+                "showId": 33,
+                "movieId": 36,
+                "theaterId": 5,
+                "dayOffset": 3,
+                "time": "3:30 PM",
+                "price": 360,
+                "availableSeats": 150
+            },
+            {
+                "showId": 34,
+                "movieId": 36,
+                "theaterId": 5,
+                "dayOffset": 3,
+                "time": "9:30 PM",
+                "price": 360,
+                "availableSeats": 140
+            },
+            {
+                "showId": 35,
+                "movieId": 37,
+                "theaterId": 8,
+                "dayOffset": 3,
+                "time": "5:30 PM",
+                "price": 340,
+                "availableSeats": 160
+            },
+            {
+                "showId": 36,
+                "movieId": 37,
+                "theaterId": 8,
+                "dayOffset": 3,
+                "time": "10:00 PM",
+                "price": 340,
+                "availableSeats": 150
+            }
+        ]
+    }
