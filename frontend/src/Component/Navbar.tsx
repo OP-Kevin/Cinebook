@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { usePathname, useRouter } from "next/navigation"
 import {
   AUTH_TOKEN_KEY,
@@ -23,6 +23,9 @@ export default function Navbar() {
   const pathname = usePathname()
   const router = useRouter()
 
+  // ⭐ Profile dropdown container નો ref
+  const profileRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
     queueMicrotask(() => {
       const user = getLoggedUser()
@@ -37,6 +40,26 @@ export default function Navbar() {
     window.addEventListener("storage", onStorage)
     return () => window.removeEventListener("storage", onStorage)
   }, [])
+
+  // ⭐ Outside click detect કરવા માટે mousedown event listener
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      // જો click profileRef ની બહાર થઈ હોય તો menu બંધ કરો
+      if (profileRef.current && !profileRef.current.contains(e.target as Node)) {
+        setProfileOpen(false)
+      }
+    }
+
+    // ⭐ Menu open હોય ત્યારે જ listener add કરો
+    if (profileOpen) {
+      document.addEventListener("mousedown", handleClickOutside)
+    }
+
+    // ⭐ Cleanup — component unmount અથવા profileOpen change થાય
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [profileOpen])
 
   const handleLogout = async () => {
     const headers: Record<string, string> = {}
@@ -54,6 +77,7 @@ export default function Navbar() {
     }
     clearAuthSession()
     setLoggedUser(null)
+    setProfileOpen(false)
     router.push("/")
   }
 
@@ -66,7 +90,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 ">
+    <div className="fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4">
 
       {/* TOP NAV */}
       <div className="relative flex items-center justify-between">
@@ -76,7 +100,8 @@ export default function Navbar() {
           <div className="bg-white text-black w-9 h-9 flex items-center justify-center rounded-md">🎬</div>
           <Link
             href="/"
-            className="text-white font-extrabold text-xl tracking-wider hover:[-webkit-text-stroke:1px_#ec4899] hover:[text-shadow:0_0_5px_#ec4899] transition duration-300" >
+            className="text-white font-extrabold text-xl tracking-wider hover:[-webkit-text-stroke:1px_#ec4899] hover:[text-shadow:0_0_5px_#ec4899] transition duration-300"
+          >
             CineBook
           </Link>
         </div>
@@ -116,27 +141,41 @@ export default function Navbar() {
 
           {/* LOGIN / PROFILE */}
           {loggedUser ? (
-            <div className="relative">
+            // ⭐ ref આ container પર attach કર્યો — icon + dropdown બંને અંદર છે
+            <div className="relative" ref={profileRef}>
+
+              {/* ⭐ Profile Icon — toggle કરે */}
               <div
-                onClick={() => setProfileOpen(!profileOpen)}
-                className="w-10 h-10 bg-purple-600 text-white flex items-center justify-center rounded-full font-bold cursor-pointer"
+                onClick={() => setProfileOpen(prev => !prev)}
+                className="w-10 h-10 bg-purple-600 text-white flex items-center justify-center rounded-full font-bold cursor-pointer select-none"
               >
                 {loggedUser.name?.charAt(0).toUpperCase()}
               </div>
 
+              {/* ⭐ Dropdown — profileRef ની અંદર છે, click અહીં થાય તો menu open રહે */}
               {profileOpen && (
-                <div className="absolute right-0 mt-3 bg-black p-4 rounded-xl w-44 text-white">
-                  <p className="mb-2">{loggedUser.name}</p>
+                <div className="absolute right-0 mt-3 bg-black p-4 rounded-xl w-44 text-white shadow-xl z-50">
+                  <p className="mb-2 font-semibold">{loggedUser.name}</p>
 
-                  <p onClick={() => goProtected("/profile")} className="cursor-pointer hover:text-purple-400 mb-2">
+                  <p
+                    onClick={() => {
+                      setProfileOpen(false)
+                      goProtected("/profile")
+                    }}
+                    className="cursor-pointer hover:text-purple-400 mb-2"
+                  >
                     Profile
                   </p>
 
-                  <p onClick={handleLogout} className="cursor-pointer hover:text-red-400">
+                  <p
+                    onClick={handleLogout}
+                    className="cursor-pointer hover:text-red-400"
+                  >
                     Logout
                   </p>
                 </div>
               )}
+
             </div>
           ) : (
             <Link href="/login">
@@ -146,7 +185,7 @@ export default function Navbar() {
             </Link>
           )}
 
-          {/* ⭐ HAMBURGER */}
+          {/* HAMBURGER */}
           <button
             className="flex lg:hidden flex-col gap-1 bg-white/10 p-3 rounded-md"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -159,7 +198,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ⭐ MOBILE MENU */}
+      {/* MOBILE MENU */}
       <div className={`lg:hidden transition-all duration-300 overflow-hidden ${menuOpen ? "max-h-96 mt-4" : "max-h-0"}`}>
         <div className="bg-black/90 backdrop-blur-xl rounded-2xl p-6 space-y-5 items-center text-white flex flex-col">
 

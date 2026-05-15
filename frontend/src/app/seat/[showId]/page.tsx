@@ -56,8 +56,8 @@ export default function SeatPage() {
         : [...prev, seat]
     )
   }
-  const bookNow = () => {
 
+  const bookNow = () => {
     const loggedUser = getLoggedUser()
 
     if (!loggedUser?.email || !getAuthToken()) {
@@ -68,17 +68,27 @@ export default function SeatPage() {
 
     const total = selectedSeats.length * (show?.price || 200)
 
-    // ⭐ IMPORTANT — NO line break in URL
-    router.push(
-      `/payment/${showId}?seats=${JSON.stringify(selectedSeats)}&total=${total}&date=${selectedDate}`
+    // ⭐ sessionStorage માં booking data save કરો — URL માં expose નહીં થાય
+    sessionStorage.setItem(
+      "bookingData",
+      JSON.stringify({
+        seats: selectedSeats,
+        total,
+        date: selectedDate,
+        showId,
+      })
     )
+
+    // ⭐ Clean URL — કોઈ sensitive data નહીં
+    router.push(`/payment/${showId}`)
   }
 
   return (
-    <div className="min-h-screenbg-linear from-black via-purple-900 to-black  flex flex-col items-center mt-20 pb-10">
+    <div className="min-h-screen bg-linear from-black via-purple-900 to-black flex flex-col items-center mt-20 pb-10">
       <BackButton />
-      {/* ⭐⭐⭐ CINEMA TOP AREA */}
-      <div className="w-full  pt-6 pb-10 flex flex-col items-center">
+
+      {/* ⭐ CINEMA TOP AREA */}
+      <div className="w-full pt-6 pb-10 flex flex-col items-center">
 
         <div className="text-gray-400 text-sm mb-3 tracking-widest">
           SCREEN
@@ -109,7 +119,7 @@ export default function SeatPage() {
 
             <div className="text-xs text-gray-400 w-6 text-center">{row}</div>
 
-            {/* LEFT */}
+            {/* LEFT BLOCK */}
             <div className="grid grid-cols-5 gap-2">
               {[...Array(5)].map((_, colIndex) => {
 
@@ -138,7 +148,7 @@ export default function SeatPage() {
             {/* AISLE */}
             <div className="w-4"></div>
 
-            {/* RIGHT */}
+            {/* RIGHT BLOCK */}
             <div className="grid grid-cols-5 gap-2">
               {[...Array(5)].map((_, colIndex) => {
 
@@ -202,8 +212,8 @@ export default function SeatPage() {
 
         </div>
       )}
+
       <ToastContainer position="top-center" autoClose={2000} theme="dark" />
     </div>
-
   )
 }

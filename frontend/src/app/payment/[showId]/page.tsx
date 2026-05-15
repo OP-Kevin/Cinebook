@@ -1,7 +1,7 @@
 "use client"
 
-import { useParams, useSearchParams, useRouter } from "next/navigation"
-import { useState } from "react"
+import { useParams, useRouter } from "next/navigation"
+import { useEffect, useState } from "react"
 import data from "@/Data/Moviedata.json"
 import { toast, ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
@@ -24,24 +24,58 @@ export default function PaymentPage() {
 
     const params = useParams()
     const router = useRouter()
-    const search = useSearchParams()
 
-    const date = search.get("date") || "Today"
     const showId = Number(params.showId)
-    const seats = JSON.parse(search.get("seats") || "[]") as string[]
 
     const show = data.shows.find(s => s.showId === showId)
     const movie = data.movies.find(m => m.id === show?.movieId)
     const theater = data.theaters.find(t => t.theaterId === show?.theaterId)
 
     const price = show?.price || 200
-    const subtotal = seats.length * price
+
+    // ⭐ sessionStorage થી data લો — URL params નહીં
+    const [seats, setSeats] = useState<string[]>([])
+    const [date, setDate] = useState("Today")
+    const [subtotal, setSubtotal] = useState(0)
 
     const [coupon, setCoupon] = useState("")
     const [discount, setDiscount] = useState(0)
     const [loading, setLoading] = useState(false)
 
     const total = Math.max(subtotal - discount, 0)
+
+    // ⭐ Component mount થાય ત્યારે sessionStorage માંથી data લો
+    useEffect(() => {
+        const raw = sessionStorage.getItem("bookingData")
+
+        if (!raw) {
+            // ⭐ Session ન હોય તો redirect કરો
+            toast.error("Session expired, please select seats again", { autoClose: 1500 })
+            setTimeout(() => router.push("/"), 1600)
+            return
+        }
+
+        try {
+            const parsed = JSON.parse(raw)
+
+            // ⭐ showId match ન થાય તો tampered data — redirect
+            if (parsed.showId !== showId) {
+                sessionStorage.removeItem("bookingData")
+                toast.error("Invalid session, please try again", { autoClose: 1500 })
+                setTimeout(() => router.push("/"), 1600)
+                return
+            }
+
+            setSeats(parsed.seats || [])
+            setDate(parsed.date || "Today")
+            setSubtotal(parsed.total || 0)
+
+        } catch {
+            sessionStorage.removeItem("bookingData")
+            toast.error("Something went wrong, please try again", { autoClose: 1500 })
+            setTimeout(() => router.push("/"), 1600)
+        }
+    }, [showId, router])
 
     const applyCoupon = () => {
 
@@ -54,131 +88,147 @@ export default function PaymentPage() {
         }
 
         if (!coupon) {
-            toast.error("Enter Coupon",{autoClose:900})
+            toast.error("Enter Coupon", { autoClose: 900 })
             return
         }
 
         if (coupons[coupon]) {
             setDiscount(coupons[coupon])
-            toast.success(`₹${coupons[coupon]} OFF Applied`,{autoClose:900})
+            toast.success(`₹${coupons[coupon]} OFF Applied`, { autoClose: 900 })
         } else {
-            toast.error("Invalid Coupon",{autoClose:900})
+            toast.error("Invalid Coupon", { autoClose: 900 })
         }
     }
-
 
     const handlePayment = async () => {
-    setLoading(true)
+        setLoading(true)
 
-    const user = getLoggedUser()
+        const user = getLoggedUser()
 
-    if (!user?.email) {
-        toast.error("Login Required",{autoClose:900})
-        router.push("/login")
-        setLoading(false)
-        return
-    }
-
-    if (!getAuthToken()) {
-        toast.error("Please login again to continue",{autoClose:900})
-        router.push("/login")
-        setLoading(false)
-        return
-    }
-
-   
-    try {
-
-        const res = await fetch("/api/create-order", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ amount: total })
-        })
-
-        if (!res.ok) {
-            alert("Server Error")
+        if (!user?.email) {
+            toast.error("Login Required", { autoClose: 900 })
+            router.push("/login")
             setLoading(false)
             return
         }
 
-        const order = await res.json()
+        if (!getAuthToken()) {
+            toast.error("Please login again to continue", { autoClose: 900 })
+            router.push("/login")
+            setLoading(false)
+            return
+        }
 
-        const options = {
-            key: process.env.NEXT_PUBLIC_RAZORPAY_KEY as string,
-            amount: order.amount,
-            currency: "INR",
-            name: "CineBook",
-            description: movie?.title,
-            order_id: order.id,
+        try {
 
-            handler: function () {
+            const res = await fetch("/api/create-order", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ amount: total })
+            })
 
-                const newBooking = {
-                    showId,
-                    movieName: movie?.title,
-                    theaterName: theater?.name,
-                    date,
-                    seats,
-                    total
-                }
-
-                fetch(`${BACKEND_URL}/api/bookings`, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        ...getAuthHeaders(),
-                    },
-                    body: JSON.stringify(newBooking)
-                })
-                    .then(async (response) => {
-                        const data = await response.json()
-                        if (!response.ok) {
-                            toast.error(data.message || "Booking save failed", { autoClose: 1000 })
-                            setLoading(false)
-                            return
-                        }
-
-                        toast.success("Payment Successful 🎉",{autoClose:900})
-                        setTimeout(() => {
-                            router.push("/bill")
-                        }, 1200)
-                    })
-                    .catch(() => {
-                        toast.error("Booking save failed", { autoClose: 1000 })
-                        setLoading(false)
-                    })
-            },
-
-            theme: {
-                color: "#ec4899"
+            if (!res.ok) {
+                alert("Server Error")
+                setLoading(false)
+                return
             }
-        }
 
-        if (!window.Razorpay) {
-            toast.error("Razorpay SDK not loaded", { autoClose: 1000 })
+            const order = await res.json()
+
+            const options = {
+                key: process.env.NEXT_PUBLIC_RAZORPAY_KEY as string,
+                amount: order.amount,
+                currency: "INR",
+                name: "CineBook",
+                description: movie?.title,
+                order_id: order.id,
+
+                handler: function () {
+
+                    const newBooking = {
+                        showId,
+                        movieName: movie?.title,
+                        theaterName: theater?.name,
+                        date,
+                        seats,
+                        total
+                    }
+
+                    fetch(`${BACKEND_URL}/api/bookings`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            ...getAuthHeaders(),
+                        },
+                        body: JSON.stringify(newBooking)
+                    })
+                        .then(async (response) => {
+                            const data = await response.json()
+                            if (!response.ok) {
+                                toast.error(data.message || "Booking save failed", { autoClose: 1000 })
+                                setLoading(false)
+                                return
+                            }
+
+                            // ⭐ Payment successful — sessionStorage clear કરો
+                            sessionStorage.removeItem("bookingData")
+
+                            toast.success("Payment Successful 🎉", { autoClose: 900 })
+                            setTimeout(() => {
+                                router.push("/bill")
+                            }, 1200)
+                        })
+                        .catch(() => {
+                            toast.error("Booking save failed", { autoClose: 1000 })
+                            setLoading(false)
+                        })
+                },
+                modal: {
+                    ondismiss: () => {
+                        setLoading(false)
+                    },
+                },
+                theme: {
+                    color: "#ec4899"
+                }
+            }
+
+            if (!window.Razorpay) {
+                toast.error("Razorpay SDK not loaded", { autoClose: 1000 })
+                setLoading(false)
+                return
+            }
+
+            const rzp = new window.Razorpay(options)
+            rzp.open()
+
+        } catch {
+            alert("Payment Failed")
             setLoading(false)
-            return
         }
-
-        const rzp = new window.Razorpay(options)
-        rzp.open()
-
-    } catch {
-        alert("Payment Failed")
-        setLoading(false)
     }
-}
+
     const removeCoupon = () => {
         setCoupon("")
         setDiscount(0)
-        toast.info("Coupon Removed",{autoClose:900})
+        toast.info("Coupon Removed", { autoClose: 900 })
     }
+
+    // ⭐ Seats load ન થઈ હોય ત્યાં સુધી loading બતાવો
+    if (seats.length === 0) {
+        return (
+            <div className="min-h-screen bg-linear from-black via-purple-900 to-black text-white flex items-center justify-center">
+                <p className="text-gray-400 text-sm">Loading booking details...</p>
+            </div>
+        )
+    }
+
     return (
 
-        <div className="min-h-screen  bg-linear from-black via-purple-900 to-black  text-white flex items-center justify-center p-6">
-
+        <div className="min-h-screen bg-linear from-black via-purple-900 to-black text-white flex items-center justify-center p-6">
 
             <div className="w-[440px] bg-white/5 backdrop-blur-3xl border border-cyan-400/20 rounded-[40px] p-6 shadow-[0_0_80px_#00eaff30] space-y-2">
+
                 {/* ⭐ MOVIE CARD */}
                 <div className="bg-white/5 backdrop-blur-2xl border border-cyan-400/20 rounded-3xl p-5 shadow-[0_0_40px_#00eaff30]">
 
@@ -196,12 +246,10 @@ export default function PaymentPage() {
                             </h1>
 
                             <div className="text-xs text-gray-300 mt-2 space-y-1">
-
                                 <p className="text-cyan-300">⭐ {movie?.rating}</p>
                                 <p>🎬 {theater?.name}</p>
                                 <p>📅 {date}</p>
                                 <p>⏰ {show?.time}</p>
-
                             </div>
 
                         </div>
@@ -266,8 +314,6 @@ export default function PaymentPage() {
                         onChange={(e) => {
                             const value = e.target.value.toUpperCase()
                             setCoupon(value)
-
-                            // ⭐ If user clears input manually
                             if (value === "") {
                                 setDiscount(0)
                             }
@@ -276,7 +322,6 @@ export default function PaymentPage() {
                         className="flex-1 bg-transparent border border-white/20 rounded-xl px-3 py-2 outline-none text-sm"
                     />
 
-                    {/* ⭐ Button Logic */}
                     {discount > 0 ? (
                         <button
                             onClick={removeCoupon}
@@ -303,8 +348,8 @@ export default function PaymentPage() {
                 >
                     {loading ? "Processing..." : `Pay ₹${total}`}
                 </button>
-            </div>
 
+            </div>
 
             <ToastContainer theme="dark" position="top-center" />
 
